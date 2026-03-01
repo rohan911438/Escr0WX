@@ -1,0 +1,37 @@
+{
+  "name": "escrowx-solana-audit",
+  "version": "1.0.0",
+  "description": "EscrowX Solana Audit Ledger - Cross-chain audit logging for Ethereum escrow events",
+  "main": "scripts/client-example.ts",
+  "scripts": {
+    "build": "anchor build",
+    "deploy": "anchor deploy",
+    "deploy-devnet": "./scripts/deploy.sh",
+    "test": "anchor test",
+    "local-test": "anchor test --skip-local-validator",
+    "client-example": "npx ts-node scripts/client-example.ts"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "escrow",
+    "audit",
+    "cross-chain",
+    "ethereum",
+    "blockchain"
+  ],
+  "author": "EscrowX Team",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
