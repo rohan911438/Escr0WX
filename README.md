@@ -103,6 +103,7 @@ The backend operates as a stateless event processor that bridges Ethereum settle
 
 **Network:** Devnet  
 **Program ID:** `6v2iemgJm3wqRmL36frHKAMNRMwjg5NdgjTjmtfamfvj`  
+**Deployer:** `FUaf11NppCyRCCQtHAEaG8Q11KQnE8SJzbebrWnc6P1M`  
 **Explorer:** [View on Solana Explorer](https://explorer.solana.com/address/6v2iemgJm3wqRmL36frHKAMNRMwjg5NdgjTjmtfamfvj?cluster=devnet)
 
 **Purpose:**
@@ -211,6 +212,7 @@ This intentional separation allows each blockchain to optimize for its core stre
 | Component | Address | Role | Network | Status |
 |-----------|---------|------|---------|--------|
 | **Audit Program** | `6v2iemgJm3wqRmL36frHKAMNRMwjg5NdgjTjmtfamfvj` | Immutable lifecycle & dispute logging | Devnet | ✅ **LIVE** |
+| **Deployer Wallet** | `FUaf11NppCyRCCQtHAEaG8Q11KQnE8SJzbebrWnc6P1M` | Program upgrade authority | Devnet | ✅ Verified |
 | **Record Type** | N/A | Lifecycle Events (Type 0) | - | Active |
 | **Record Type** | N/A | Dispute Events (Type 1) | - | Active |
 
