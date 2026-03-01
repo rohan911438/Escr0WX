@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 185 100% 50%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 185 100% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 185 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 185 100% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 185 100% 50%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[color:var(--brand-dark)] text-foreground font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-50;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #000000;
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.15), 0 0 60px rgba(0, 240, 255, 0.05);
+  }
+
+  .glow-cyan-strong {
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.3), 0 0 80px rgba(0, 240, 255, 0.1);
+  }
+
+  .glow-border {
+    border: 1px solid rgba(0, 240, 255, 0.2);
+  }
+
+  .glow-border-hover:hover {
+    border-color: rgba(0, 240, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #00F0FF, #BD00FF);
+  }
+
+  .glass-card {
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
